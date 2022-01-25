@@ -1,0 +1,12 @@
+image: atlassian/default-image:2
+
+pipelines:
+    branches:
+      develop:
+        - step:
+           script:
+             - git remote add sync git@github.com:jwtnewbie/bitbucket-to-github-ttse.git
+             - git checkout develop
+             - git pull
+             - git fetch             
+             - git push
