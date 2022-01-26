@@ -9,4 +9,4 @@ pipelines:
              - git checkout develop
              - git pull
              - git fetch             
-             - git push
+             - git push sync develop
